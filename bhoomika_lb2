@@ -1,0 +1,21 @@
+def cal(op,x,y):
+  if op == '+':
+    return x + y
+  elif op == '-':
+    return x - y
+  elif op== '*':
+    return x * y
+  elif op == '/':
+    return x / y
+  elif op=='^':
+    return x**y
+  else:
+    return "invalid choice"
+while True:
+ print("welcome to the calculator")
+ print("enter the operation you want to perform")
+ x=int(input("enter the first number"))
+ y=int(input("enter the second number"))
+ op=input("enter the operator")
+ print(cal(op,x,y))
+ 
